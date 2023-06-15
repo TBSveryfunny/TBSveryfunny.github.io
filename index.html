@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="menu-container">
+      <div class="logo">
+        <h1>Triston Salas</h1>
+        <h4>A Portfolio</h4>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#tools">Toolbox</a>
+        <a href="#toys">Webtoys</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="body-container">
+    <section id="home">
+      <article>
+        <h1>WELCOME.</h1>
+        <p>This is my portfolio website for the corporate people. Just scroll down, and I'll show you 'round.</p>
+      </article>
+      <div class="imgbox">
+        <img src="portfolio.png" alt="An abstract depiction of what this website is about.">
+      </div>
+    </section>
+    <section id="about">
+      <div class="imgbox">
+        <img src="IMG_1178.jpg" alt="This is me.">
+      </div>
+      <article>
+        <h1>ABOUT ME.</h1>
+        <p>Triston Salas was born in 2000 in a Mississippi hospital. Always a tinkerer, he started programming after an FSCJ course showed him how it worked. Whenever he's focused on something, he will go out of this way to get it done. And get it done well.</p>
+      </article>
+    </section>
+    <section id="tools">
+      <article>
+        <h1>I CAN HANDLE THIS.</h1>
+        <p>Here's a nice list of skills that I have, in order of expertise. See anything you like?</p>
+      </article>
+      <div class="imgbox">
+        <img src="skillz.png" alt="This is what I'm capable of.'">
+      </div>
+    </section>
+    <section id="toys">
+      <div class="imgbox">
+        <img src="https://cdn.pixabay.com/photo/2017/10/26/17/51/under-construction-2891888_1280.jpg" alt="This is what I'm capable of.'">
+      </div>
+      <article>
+        <h1>SOME STUFF I MADE.</h1>
+        <p>Just some things I made on the side.</p>
+      </article>
+    </section>
+    <section id="contact">
+      <article>
+        <h1>CONTACT ME.</h1>
+        <p>Here's my contact card.</p>
+      </article>
+      <div class="imgbox">
+        <img src="contactcard.png" alt="This is what I'm capable of.'">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="foot">
+      <h2>Triston Salas</h2>
+      <h5>A resident of Talbott</h5>
+      <h5>Oh, right. You were on this site for <span id="time-container">0</span> seconds. Thanks, stolen obligatory JavaScript.</h5>
+    </div>
+  </footer>
+  <script>
+    const timeContainer = document.getElementById("time-container");
+    const BIRTH_DAY_DATE = new Date();
+    const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+    setInterval(() => {
+      const now = new Date();
+      const difference = Math.floor(
+        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+      );
+
+      timeContainer.innerText = intlNumberFormatter.format(difference);
+    }, 1000);
+  </script>
+</body>
+</html>

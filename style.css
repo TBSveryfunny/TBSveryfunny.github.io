@@ -1,0 +1,154 @@
+﻿@font-face {
+  font-family: 'Futura Md BT';
+  src: url('../futura-medium-bt.ttf') format('truetype');
+}
+
+body {
+  background-color: rgb(255, 25, 49);
+  font-family: 'Futura Md BT';
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 7.5rem;
+  width: 100%;
+  margin: auto;
+  max-width: 1800px;
+}
+
+main h1 {
+  font-size: 2rem;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1800px;
+  align-items: center;
+}
+
+section p {
+  color: white;
+}
+
+.imgbox, article {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  margin: 1rem 4rem;
+}
+
+.imgbox img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  border-bottom: 50px solid rgb(20, 20, 20);
+  background-color: rgb(80, 80, 80);
+  justify-content: center;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 7.5rem;
+  background-color: rgb(20, 20, 20);
+  justify-content: center;
+  z-index: 1;
+  position: fixed;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1800px;
+  margin: 1rem 3rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 50rem;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 15rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+nav a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+nav a:visited {
+  color: #CCCCCC;
+}
+
+nav a:hover {
+  color: #888888;
+  font-weight: normal;
+}
+
+nav a:active {
+  color: #777777;
+}
+
+h1, h4 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: white;
+  line-height: 0.125rem;
+}
+
+main h1 {
+  line-height: normal;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #CCCCCC;
+  line-height: 0.125rem;
+}
+
+h5 {
+  text-transform: lowercase;
+  font-weight: lighter;
+  color: #888888;
+  line-height: 0.125rem;
+}
+
+@media only screen and (max-width: 670px) {
+  /* CSS ruleset */
+  nav {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  header {
+    height: 9.25rem;
+  }
+  section {
+    flex-direction: column;
+  }
+}
+
